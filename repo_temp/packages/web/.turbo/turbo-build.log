@@ -1,0 +1,17 @@
+$ tsc --noEmit && vite build
+vite v7.3.2 building client environment for production...
+(node:20874) [DEP0205] DeprecationWarning: `module.register()` is deprecated. Use `module.registerHooks()` instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+transforming...
+✓ 352 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                     0.63 kB │ gzip:   0.41 kB
+dist/assets/index-89pfjxcc.css    132.07 kB │ gzip:  27.21 kB
+dist/assets/index-_y-bm81D.js   1,913.94 kB │ gzip: 499.16 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 8.86s
